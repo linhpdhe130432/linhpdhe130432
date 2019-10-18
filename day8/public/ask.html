@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Quyết.đê!</a>
+          <button data-target="#item" class=" navbar-toggle" data-toggle="collapse">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- <div class="navbar-collapse collapse" id="item">
+          <ul class="nav navbar-nav">
+            <li><a href="/ask">Hỏi nhanh</a></li>
+            <li class="active"><a href="/">Đáp gọn</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    
+    <div class="navbar-collapse collapse" id="item">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Hỏi nhanh</a></li>
+        <li><a href="./question.html">Đáp gọn</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <form action="" method="post" class="input-text">
+    <h1>Hãy hỏi cộng đồng một câu hỏi đúng/sai hoặc có/không</h1>
+    <textarea class="form-control" maxlength="200" rows="6" name="question"></textarea>
+    <p class="remain-character">Còn 200/200 kí tự</p>
+    <p class="noti"></p>
+    <button class="btn btn-primary" type="submit" id="btn_ask">Gửi</button>
+  </form>
+</div>
+<script src="/ask.js"></script>
+  </body>
+</html>

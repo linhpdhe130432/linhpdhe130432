@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./question.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Quyết.đê!</a>
+        <button data-target="#item" class=" navbar-toggle" data-toggle="collapse">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- <div class="navbar-collapse collapse" id="item">
+          <ul class="nav navbar-nav">
+            <li><a href="/ask">Hỏi nhanh</a></li>
+            <li class="active"><a href="/">Đáp gọn</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+      <div class="navbar-collapse collapse" id="item">
+        <ul class="nav navbar-nav">
+          <li><a href="/ask">Hỏi nhanh</a></li>
+          <li class="active"><a href="/">Đáp gọn</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="question-content"></h1>
+      <div class="row text-center" id="btn_answer">
+        <div class="col-md-6">
+          <button type="submit" class="btn btn-danger btn-lg" name="btn_yesno" value="no">
+            <span class="glyphicon glyphicon-thumbs-down"></span>
+            Sai / Không / Trái
+          </button>
+        </div>
+        <div class="col-md-6">
+          <button type="submit" class="btn btn-primary btn-lg" name="btn_yesno" value="yes">
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+            Đúng / Có / Phải
+          </button>
+        </div>
+      </div>
+      <div class="row text-center" id="btn_chuyen">
+        <button type="submit" class="result" name="btn_yesno" value="ketquavote">Kết quả vote</button>
+        <button type="submit" class="other" name="btn_yesno" value="cauhoikhac">Câu hỏi khác</button>
+      </div>
+    </form>
+  </div>
+
+  <script src='/question.js'></script>
+</body>
+
+</html>
